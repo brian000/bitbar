@@ -13,4 +13,4 @@
 # Based on Coinbase bitbar plugin by Mat Ryer
 #
 
-echo -n "Ƀ$"; curl -s https://api.gdax.com/products/BTC-USD/ticker/|egrep -o 'price":"[0-9]+\.[0-9]+'|sed 's/price":"//'|sed 's/.\{6\}$//'
+echo -n "₿$"; curl -s https://api.gdax.com/products/BTC-USD/ticker/|egrep -o 'price":"[0-9]+\.[0-9]+'|sed 's/price":"//'|sed 's/.\{6\}$//'
